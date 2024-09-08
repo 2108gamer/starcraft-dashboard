@@ -25,7 +25,7 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 
 export const metadata: Metadata = {
   title: "Dashboard",
-  description: "Example dashboard app built using the components.",
+  description: "Pagina de tickets.",
 };
 
 export default async function DashboardPage() {
@@ -215,7 +215,7 @@ export default async function DashboardPage() {
                   <CardHeader>
                     <CardTitle>Tickets abiertos por ti</CardTitle>
                     <CardDescription>
-                    Por el momento solo aparece el ticket mas reciente.
+                    Aqui veras todos tus tickets abiertos.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>

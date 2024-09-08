@@ -15,7 +15,7 @@ export function MainNav({
     >
       <div className="flex h-[60px] items-center px-6">
             <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
-              <span className="">StarTickets</span>
+              <span className="">Imanity Network</span>
             </Link>
           </div>
       <Link

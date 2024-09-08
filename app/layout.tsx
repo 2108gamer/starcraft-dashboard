@@ -12,7 +12,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "StarDashbaord",
+  title: "Imanity Network",
   description: "PoweredBy RicaDev",
 };
 

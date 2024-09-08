@@ -18,17 +18,20 @@ import { hacerSolicitud } from "@/lib/search.js"
  
 export async function RecentSales() {
   const datos = await hacerSolicitud();
-  console.log("Datos recibidos:", datos);  // Verifica qué estás recibiendo
+
+
 
   const datosArray = Array.isArray(datos) ? datos : [datos];
   const session = await auth();
 
   if (!datosArray || datosArray.length === 0) {
-    return <p className="ml-auto font-medium">No hay datos disponibles.</p>;
+    return <div className="flex justify-center items-center h-full">
+    <p className="font-medium">No hay datos disponibles.</p>
+  </div>
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-1.5">
       {datosArray.map((dato) => (
         <div className="flex items-center" key={dato._id}>
           <Avatar className="h-9 w-9">
